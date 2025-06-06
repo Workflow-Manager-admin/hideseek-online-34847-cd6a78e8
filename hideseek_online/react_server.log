@@ -2,29 +2,43 @@
 > react-kavia@0.1.0 start
 > react-scripts start
 
-(node:4209) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:15909) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:4209) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:15909) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
+Compiled successfully!
+
+You can now view react-kavia in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.17.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
 Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 15:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 82:6:    React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 223:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 320:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 38:10:   'showHowToPlay' is assigned a value but never used                                                                                     no-unused-vars
+  Line 38:25:   'setShowHowToPlay' is assigned a value but never used                                                                                  no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 204:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 521:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 15:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 82:6:    React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 223:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 320:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 38:10:   'showHowToPlay' is assigned a value but never used                                                                                     no-unused-vars
+  Line 38:25:   'setShowHowToPlay' is assigned a value but never used                                                                                  no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 204:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 521:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -32,56 +46,20 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 18:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 25:10:   'playerNickname' is assigned a value but never used                                                                                    no-unused-vars
-  Line 25:26:   'setPlayerNickname' is assigned a value but never used                                                                                 no-unused-vars
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 26:26:   'setSelectedAvatar' is assigned a value but never used                                                                                 no-unused-vars
-  Line 27:10:   'userReady' is assigned a value but never used                                                                                         no-unused-vars
-  Line 27:21:   'setUserReady' is assigned a value but never used                                                                                      no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 38:24:   'setChatMessages' is assigned a value but never used                                                                                   no-unused-vars
-  Line 42:10:   'chatInput' is assigned a value but never used                                                                                         no-unused-vars
-  Line 42:21:   'setChatInput' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 115:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 256:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 353:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 195:9:   'toggleHowToPlay' is assigned a value but never used                                                                                   no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 548:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 18:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 25:10:   'playerNickname' is assigned a value but never used                                                                                    no-unused-vars
-  Line 25:26:   'setPlayerNickname' is assigned a value but never used                                                                                 no-unused-vars
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 26:26:   'setSelectedAvatar' is assigned a value but never used                                                                                 no-unused-vars
-  Line 27:10:   'userReady' is assigned a value but never used                                                                                         no-unused-vars
-  Line 27:21:   'setUserReady' is assigned a value but never used                                                                                      no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 38:24:   'setChatMessages' is assigned a value but never used                                                                                   no-unused-vars
-  Line 42:10:   'chatInput' is assigned a value but never used                                                                                         no-unused-vars
-  Line 42:21:   'setChatInput' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 115:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 256:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 353:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 195:9:   'toggleHowToPlay' is assigned a value but never used                                                                                   no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 548:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -89,56 +67,18 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 18:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 25:10:   'playerNickname' is assigned a value but never used                                                                                    no-unused-vars
-  Line 25:26:   'setPlayerNickname' is assigned a value but never used                                                                                 no-unused-vars
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 26:26:   'setSelectedAvatar' is assigned a value but never used                                                                                 no-unused-vars
-  Line 27:10:   'userReady' is assigned a value but never used                                                                                         no-unused-vars
-  Line 27:21:   'setUserReady' is assigned a value but never used                                                                                      no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 38:24:   'setChatMessages' is assigned a value but never used                                                                                   no-unused-vars
-  Line 42:10:   'chatInput' is assigned a value but never used                                                                                         no-unused-vars
-  Line 42:21:   'setChatInput' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 130:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 271:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 368:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 548:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 18:19:   'setPlayers' is assigned a value but never used                                                                                        no-unused-vars
-  Line 25:10:   'playerNickname' is assigned a value but never used                                                                                    no-unused-vars
-  Line 25:26:   'setPlayerNickname' is assigned a value but never used                                                                                 no-unused-vars
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 26:26:   'setSelectedAvatar' is assigned a value but never used                                                                                 no-unused-vars
-  Line 27:10:   'userReady' is assigned a value but never used                                                                                         no-unused-vars
-  Line 27:21:   'setUserReady' is assigned a value but never used                                                                                      no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 38:24:   'setChatMessages' is assigned a value but never used                                                                                   no-unused-vars
-  Line 42:10:   'chatInput' is assigned a value but never used                                                                                         no-unused-vars
-  Line 42:21:   'setChatInput' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 130:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 271:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 368:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 548:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -146,46 +86,18 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 344:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 441:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 43:30:   'setSelectedHidingSpot' is assigned a value but never used                                                                             no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 344:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 441:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -193,44 +105,20 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 393:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 490:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
+  Line 812:12:  'renderHowToPlayModal' is defined but never used                                                                                       no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 393:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 490:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
+  Line 812:12:  'renderHowToPlayModal' is defined but never used                                                                                       no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -238,46 +126,18 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 416:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 513:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 26:10:   'selectedAvatar' is assigned a value but never used                                                                                    no-unused-vars
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 50:9:    'avatarOptions' is assigned a value but never used                                                                                     no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 112:9:   'updatePlayerNickname' is assigned a value but never used                                                                              no-unused-vars
-  Line 119:9:   'updatePlayerAvatar' is assigned a value but never used                                                                                no-unused-vars
-  Line 126:9:   'toggleReady' is assigned a value but never used                                                                                       no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 416:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 513:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -285,36 +145,18 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 482:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 579:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 47:9:    'gameMapRef' is assigned a value but never used                                                                                        no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 482:11:  'currentPlayer' is assigned a value but never used                                                                                     no-unused-vars
-  Line 579:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
 Compiling...
@@ -322,98 +164,174 @@ Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-  Line 590:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 37:10:   'showChat' is assigned a value but never used                                                                                          no-unused-vars
-  Line 37:20:   'setShowChat' is assigned a value but never used                                                                                       no-unused-vars
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 53:9:    'leaderboardData' is assigned a value but never used                                                                                   no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 346:12:  'returnToLobby' is defined but never used                                                                                              no-unused-vars
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-  Line 590:11:  'currentSeeker' is assigned a value but never used                                                                                     no-unused-vars
+  Line 44:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 231:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 561:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/HideSeekGameContainer.js
+Syntax error: Identifier 'showHowToPlay' has already been declared. (15:33) (15:33)
+ERROR in ./src/HideSeekGameContainer.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/src/HideSeekGameContainer.js: Identifier 'showHowToPlay' has already been declared. (15:33)
+
+  13 |  * @param {function} toggleHowToPlay - Function to toggle How to Play modal
+  14 |  */
+> 15 | function HideSeekGameContainer({ showHowToPlay, setShowHowToPlay, toggleHowToPlay }) {
+     |                                  ^
+  16 |   // Game Phases: 'lobby', 'hiding', 'seeking', 'results'
+  17 |   const [phase, setPhase] = useState('lobby');
+  18 |   const [location, setLocation] = useState(null);
+    at constructor (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1555:19)
+    at FlowScopeHandler.declareName (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1538:14)
+    at FlowScopeHandler.declareName (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1622:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7476:16)
+    at FlowParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7472:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7413:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7453:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7449:16)
+    at FlowParserMixin.checkParams (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11814:12)
+    at FlowParserMixin.checkParams (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5812:11)
+    at FlowParserMixin.<anonymous> (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11789:14)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12976:48)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseBlock (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12941:10)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11783:24)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5117:11)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11769:10)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5125:18)
+    at /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:13085:12
+    at FlowParserMixin.withSmartMixTopicForbiddingContext (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12077:14)
+    at FlowParserMixin.parseFunction (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:13084:10)
+    at FlowParserMixin.parseFunctionStatement (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12769:17)
+    at FlowParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12430:21)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12406:17)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5140:24)
+    at FlowParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12383:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12960:36)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseProgram (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12280:10)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12270:25)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5909:28)
+    at FlowParserMixin.parse (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:14120:10)
+    at parse (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:14154:38)
+    at parser (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:261:32)
+    at /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/HideSeekGameContainer.js
+  Line 15:33:  Parsing error: Identifier 'showHowToPlay' has already been declared. (15:33)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/HideSeekGameContainer.js
+Syntax error: Identifier 'toggleHowToPlay' has already been declared. (15:66) (15:66)
+ERROR in ./src/HideSeekGameContainer.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/src/HideSeekGameContainer.js: Identifier 'toggleHowToPlay' has already been declared. (15:66)
+
+  13 |  * @param {function} toggleHowToPlay - Function to toggle How to Play modal
+  14 |  */
+> 15 | function HideSeekGameContainer({ showHowToPlay, setShowHowToPlay, toggleHowToPlay }) {
+     |                                                                   ^
+  16 |   // Game Phases: 'lobby', 'hiding', 'seeking', 'results'
+  17 |   const [phase, setPhase] = useState('lobby');
+  18 |   const [location, setLocation] = useState(null);
+    at constructor (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1555:19)
+    at FlowScopeHandler.declareName (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1538:14)
+    at FlowScopeHandler.declareName (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:1622:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7476:16)
+    at FlowParserMixin.checkIdentifier (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7472:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7413:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7453:12)
+    at FlowParserMixin.checkLVal (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:7449:16)
+    at FlowParserMixin.checkParams (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11814:12)
+    at FlowParserMixin.checkParams (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5812:11)
+    at FlowParserMixin.<anonymous> (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11789:14)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12976:48)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseBlock (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12941:10)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11783:24)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5117:11)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:11769:10)
+    at FlowParserMixin.parseFunctionBodyAndFinish (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5125:18)
+    at /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:13085:12
+    at FlowParserMixin.withSmartMixTopicForbiddingContext (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12077:14)
+    at FlowParserMixin.parseFunction (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:13084:10)
+    at FlowParserMixin.parseFunctionStatement (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12769:17)
+    at FlowParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12430:21)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12406:17)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5140:24)
+    at FlowParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12383:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12960:36)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseProgram (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12280:10)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:12270:25)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:5909:28)
+    at FlowParserMixin.parse (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:14120:10)
+    at parse (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/parser/lib/index.js:14154:38)
+    at parser (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:261:32)
+    at /home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/kavia/workspace/code-generation/hideseek-online-34847-cd6a78e8/hideseek_online/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/HideSeekGameContainer.js
+  Line 15:66:  Parsing error: Identifier 'toggleHowToPlay' has already been declared. (15:66)
+
+webpack compiled with 2 errors
 Compiling...
 Compiled with warnings.
 
 [eslint] 
 src/HideSeekGameContainer.js
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
+  Line 46:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 228:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 558:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
 src/HideSeekGameContainer.js
-  Line 38:10:   'chatMessages' is assigned a value but never used                                                                                      no-unused-vars
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 46:9:    'chatInputRef' is assigned a value but never used                                                                                      no-unused-vars
-  Line 187:9:   'handleChatKeyPress' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/HideSeekGameContainer.js
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-  Line 680:12:  'renderChatPanel' is defined but never used                                                                                            no-unused-vars
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/HideSeekGameContainer.js
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-  Line 680:12:  'renderChatPanel' is defined but never used                                                                                            no-unused-vars
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/HideSeekGameContainer.js
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/HideSeekGameContainer.js
-  Line 43:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
-  Line 203:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  Line 520:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
+  Line 46:10:   'selectedHidingSpot' is assigned a value but never used                                                                                no-unused-vars
+  Line 228:6:   React Hook useEffect has missing dependencies: 'autoHideForAll' and 'finishRound'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 558:19:  'isSelectedBy' is assigned a value but never used                                                                                      no-unused-vars
 
 webpack compiled with 1 warning

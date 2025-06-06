@@ -8,8 +8,11 @@ import './HideSeekGameStyles.css';
  * improved location selector, chat panel, mini-leaderboard, accessibility improvements,
  * and responsive design with light theme and specified color palette.
  * Multiplayer sync and AI computations are stubbed but UI designed as if functional.
+ * @param {boolean} showHowToPlay - Controls visibility of How to Play modal
+ * @param {function} setShowHowToPlay - Function to set How to Play modal visibility
+ * @param {function} toggleHowToPlay - Function to toggle How to Play modal
  */
-function HideSeekGameContainer() {
+function HideSeekGameContainer({ showHowToPlay, setShowHowToPlay, toggleHowToPlay }) {
   // Game Phases: 'lobby', 'hiding', 'seeking', 'results'
   const [phase, setPhase] = useState('lobby');
   const [location, setLocation] = useState(null);
@@ -189,6 +192,28 @@ function HideSeekGameContainer() {
       sendChatMessage();
     }
   };
+
+  // Handle keyboard events for How to Play modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && showHowToPlay) {
+        setShowHowToPlay(false);
+      }
+    };
+
+    if (showHowToPlay) {
+      document.addEventListener('keydown', handleKeyDown);
+      // Focus management for accessibility
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [showHowToPlay, setShowHowToPlay]);
 
   // Handle ticking timer during hiding/seeking phase
   useEffect(() => {
@@ -453,25 +478,38 @@ function HideSeekGameContainer() {
           </div>
         </div>
 
-        {/* Start Game Button */}
-        {location && (
-          <div style={{ textAlign: 'center', marginTop: '30px' }}>
-            <button
-              className={`btn btn-large ${allPlayersReady ? 'btn-ready' : ''}`}
-              onClick={startGame}
-              disabled={!allPlayersReady}
-              aria-describedby="start-game-help"
-            >
-              {allPlayersReady ? '🎮 Start Game!' : 'Waiting for players...'}
-            </button>
-            <div id="start-game-help" className="sr-only">
-              {allPlayersReady 
-                ? 'All players are ready. Click to start the game.' 
-                : 'Waiting for all players to be ready before starting.'
-              }
-            </div>
-          </div>
-        )}
+        {/* Game Controls */}
+        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+          <button
+            className="btn accent"
+            onClick={toggleHowToPlay}
+            style={{ marginBottom: '15px', marginRight: '10px' }}
+            aria-label="Open How to Play instructions"
+          >
+            ❓ How to Play
+          </button>
+          
+          {/* Start Game Button */}
+          {location && (
+            <>
+              <button
+                className={`btn btn-large ${allPlayersReady ? 'btn-ready' : ''}`}
+                onClick={startGame}
+                disabled={!allPlayersReady}
+                aria-describedby="start-game-help"
+                style={{ display: 'block', margin: '0 auto' }}
+              >
+                {allPlayersReady ? '🎮 Start Game!' : 'Waiting for players...'}
+              </button>
+              <div id="start-game-help" className="sr-only">
+                {allPlayersReady 
+                  ? 'All players are ready. Click to start the game.' 
+                  : 'Waiting for all players to be ready before starting.'
+                }
+              </div>
+            </>
+          )}
+        </div>
       </div>
     );
   }
@@ -662,6 +700,15 @@ function HideSeekGameContainer() {
             {showChat ? '💬 Hide Chat' : '💬 Show Chat'}
           </button>
           
+          <button
+            className="btn accent"
+            onClick={toggleHowToPlay}
+            style={{ width: '100%', marginBottom: '10px' }}
+            aria-label="Open How to Play instructions"
+          >
+            ❓ How to Play
+          </button>
+          
           {phase !== 'lobby' && (
             <button
               className="btn"
@@ -751,6 +798,189 @@ function HideSeekGameContainer() {
               aria-label="Send message"
             >
               Send
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // How to Play modal component with comprehensive instructions
+  function renderHowToPlayModal() {
+    if (!showHowToPlay) return null;
+
+    return (
+      <div 
+        className="how-to-play-modal-overlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="how-to-play-title"
+        onClick={(e) => e.target === e.currentTarget && setShowHowToPlay(false)}
+      >
+        <div className="how-to-play-modal">
+          <div className="modal-header">
+            <h2 id="how-to-play-title" className="how-to-play-title">
+              ❓ How to Play HideSeek Online
+            </h2>
+            <button
+              onClick={() => setShowHowToPlay(false)}
+              className="modal-close-btn"
+              aria-label="Close How to Play modal"
+              autoFocus
+            >
+              ✕
+            </button>
+          </div>
+
+          <div className="how-to-play-content">
+            {/* Game Overview */}
+            <section className="help-section">
+              <h3>🎯 Game Overview</h3>
+              <p>
+                HideSeek Online is a digital hide-and-seek game where players take turns hiding 
+                and seeking in virtual locations. One player becomes the seeker while others hide 
+                in secret spots around the chosen location.
+              </p>
+            </section>
+
+            {/* Getting Started */}
+            <section className="help-section">
+              <h3>🚀 Getting Started</h3>
+              <div className="help-steps">
+                <div className="help-step">
+                  <div className="step-number">1</div>
+                  <div className="step-content">
+                    <h4>Choose Your Avatar</h4>
+                    <p>Select from various emoji avatars to represent yourself in the game. Click on any avatar in the grid to choose it.</p>
+                  </div>
+                </div>
+                <div className="help-step">
+                  <div className="step-number">2</div>
+                  <div className="step-content">
+                    <h4>Set Your Nickname</h4>
+                    <p>Enter a unique nickname (up to 20 characters) that other players will see during the game.</p>
+                  </div>
+                </div>
+                <div className="help-step">
+                  <div className="step-number">3</div>
+                  <div className="step-content">
+                    <h4>Mark Yourself Ready</h4>
+                    <p>Click the "Ready" button when you're satisfied with your avatar and nickname. All players must be ready before starting.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Location Selection */}
+            <section className="help-section">
+              <h3>🗺️ Choosing a Location</h3>
+              <p>Select from various themed locations where the hide-and-seek game will take place:</p>
+              <ul className="help-list">
+                <li><strong>🌳 Sunny Park:</strong> Hide behind trees, benches, and playground equipment</li>
+                <li><strong>🏠 Cozy House:</strong> Use closets, beds, and furniture as hiding spots</li>
+                <li><strong>🏫 Old School:</strong> Explore lockers, desks, and classroom areas</li>
+                <li><strong>🏰 Medieval Castle:</strong> Discover towers, dungeons, and royal chambers</li>
+              </ul>
+            </section>
+
+            {/* Game Phases */}
+            <section className="help-section">
+              <h3>⏱️ Game Phases</h3>
+              <div className="help-steps">
+                <div className="help-step">
+                  <div className="phase-indicator phase-hiding">🙈 Hiding</div>
+                  <div className="step-content">
+                    <h4>Hiding Phase (30 seconds)</h4>
+                    <p>All players except the seeker choose their hiding spots by clicking on numbered locations on the map. Choose wisely!</p>
+                  </div>
+                </div>
+                <div className="help-step">
+                  <div className="phase-indicator phase-seeking">👁️ Seeking</div>
+                  <div className="step-content">
+                    <h4>Seeking Phase (45 seconds)</h4>
+                    <p>The seeker tries to find hidden players by clicking on spots where they think players are hiding. Found players are revealed!</p>
+                  </div>
+                </div>
+                <div className="help-step">
+                  <div className="phase-indicator">🏆 Results</div>
+                  <div className="step-content">
+                    <h4>Results Phase</h4>
+                    <p>View who was found and who stayed hidden. Points are awarded and the next round begins with a new seeker.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Controls & Features */}
+            <section className="help-section">
+              <h3>🎮 Controls & Features</h3>
+              <div className="help-grid">
+                <div className="help-feature">
+                  <h4>💬 Chat System</h4>
+                  <p>Communicate with other players during the game. Toggle chat on/off using the chat button. Type messages and press Enter to send.</p>
+                </div>
+                <div className="help-feature">
+                  <h4>⏰ Timer</h4>
+                  <p>Keep track of remaining time during hiding and seeking phases. The timer changes color when time is running low!</p>
+                </div>
+                <div className="help-feature">
+                  <h4>👥 Player List</h4>
+                  <p>View all players, their avatars, scores, and see who is currently the seeker (marked with 👁️).</p>
+                </div>
+                <div className="help-feature">
+                  <h4>🏆 Leaderboard</h4>
+                  <p>Track player rankings and scores throughout multiple rounds of the game.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Scoring */}
+            <section className="help-section">
+              <h3>📊 Scoring System</h3>
+              <ul className="help-list">
+                <li><strong>Seeker:</strong> Earns 10 points for each player they find</li>
+                <li><strong>Hiders:</strong> Earn 5 points if they remain hidden</li>
+                <li><strong>Strategy:</strong> Balance between choosing obvious vs. creative hiding spots!</li>
+              </ul>
+            </section>
+
+            {/* Tips & Strategies */}
+            <section className="help-section">
+              <h3>💡 Tips & Strategies</h3>
+              <div className="help-tips">
+                <div className="tip-item">
+                  <strong>For Hiders:</strong> Don't always choose the most obvious spots. Sometimes the best hiding place is in plain sight!
+                </div>
+                <div className="tip-item">
+                  <strong>For Seekers:</strong> Think about where you would hide and check popular spots first, but don't forget less obvious locations.
+                </div>
+                <div className="tip-item">
+                  <strong>Use Chat:</strong> Communicate with other players to add fun and strategy to the game.
+                </div>
+                <div className="tip-item">
+                  <strong>Watch the Timer:</strong> Don't take too long deciding on your hiding spot or seeking location.
+                </div>
+              </div>
+            </section>
+
+            {/* Accessibility */}
+            <section className="help-section">
+              <h3>♿ Accessibility Features</h3>
+              <ul className="help-list">
+                <li><strong>Keyboard Navigation:</strong> Use Tab to navigate, Enter to select, Escape to close modals</li>
+                <li><strong>Screen Reader Support:</strong> All elements have proper labels and descriptions</li>
+                <li><strong>High Contrast:</strong> Game adapts to high contrast system preferences</li>
+                <li><strong>Focus Indicators:</strong> Clear visual focus indicators for all interactive elements</li>
+              </ul>
+            </section>
+          </div>
+
+          <div className="modal-footer">
+            <button
+              className="btn btn-large"
+              onClick={() => setShowHowToPlay(false)}
+            >
+              🎮 Start Playing!
             </button>
           </div>
         </div>
@@ -929,6 +1159,9 @@ function HideSeekGameContainer() {
 
       {/* Chat Panel - floating overlay */}
       {renderChatPanel()}
+
+      {/* How to Play Modal */}
+      {renderHowToPlayModal()}
 
       {/* Results Modal */}
       {phase === "results" && renderResultsPopup()}
